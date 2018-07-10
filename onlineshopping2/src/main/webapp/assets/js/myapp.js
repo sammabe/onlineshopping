@@ -1,4 +1,5 @@
 $(function(){
+	//solving active menu 
 	switch(menu){
 	case 'About US':
 		$('#about').addClass('active');
@@ -10,4 +11,4 @@ $(function(){
 		$('#home').addClass('active');
 		break;
 	}
-})
+});

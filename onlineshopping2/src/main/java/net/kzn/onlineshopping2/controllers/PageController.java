@@ -1,17 +1,27 @@
 package net.kzn.onlineshopping2.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import net.kzn.shoppingbackend.dao.CatedoryDao;
+
 @Controller
 public class PageController {
 
+	
+	@Autowired
+	private CatedoryDao categoryDao;
+	
+	
+	
 	@RequestMapping(value= {"/","/index","/home"})
 	public ModelAndView index() {
 		ModelAndView mv=new ModelAndView("page");
 		mv.addObject("title","Home");
+		mv.addObject("categories",categoryDao.list());
 		mv.addObject("userClickHome",true);
 		return mv;
 	}

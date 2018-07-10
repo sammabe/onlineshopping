@@ -13,7 +13,7 @@
             </li id="about">
             <li class="nav-item">
               <a class="nav-link" href="${contextRoot }/about">About</a>
-            </li id="listproducts">
+            </li id="listProducts">
             <li class="nav-item">
               <a class="nav-link" href="${contextRoot }/listProducts">View Products</a>
             </li id="contact">
