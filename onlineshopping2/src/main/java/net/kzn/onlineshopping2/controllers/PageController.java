@@ -24,7 +24,7 @@ public class PageController {
 		mv.addObject("userClickHome",true);
 		return mv;
 	}
-	
+	//Hi commenting
 	/*@RequestMapping(value="/test")
 	public ModelAndView test(@RequestParam(value="greeting",required=false)String greeting) {
 		if (greeting==null) {
